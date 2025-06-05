@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="author" content="Ayomikun" />
+    <meta name="Taco shop" content="taco" />
+
+    <title>contact us</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Contact Us</h1>
+        <nav>
+          <ul>
+            <li><a href="/">Homepage</a></li>
+            <li><a href="/#AboutATS">About ATS</a></li>
+            <li><a href="/#Ourmenu">Our menu</a></li>
+            <li><a href="hours.html">store hours</a></li>
+          </ul>
+        </nav>
+        <figure>
+          <img src="image/tacos_close_up_400x260.png" alt="Tacos" />
+          <figcaption>Yummy Tacos</figcaption>
+        </figure>
+      </header>
+    </main>
+    <section>
+      <h2>Our contact form</h2>
+      <form action="https://httpbin.org/post" method="post">
+        <fieldset>
+          <legend>Send Us a Message</legend>
+          <p>
+            <label for="Name">Name:</label>
+            <input
+              type="text"
+              name="Name"
+              id="Name"
+              placeholder="Your Name"
+              required
+            />
+          </p>
+          <p>
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              placeholder="Your mail"
+            />
+          </p>
+          <p>
+            <label for="phone">Phone number </label>
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              placeholder="080-221-09872"
+              pattern="[0-9]{3}[0-9]{3}[0-9]{5}"
+            />
+          </p>
+          <p>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Leave a message here!"
+            ></textarea>
+          </p>
+        </fieldset>
+      </form>
+    </section>
+    <footer>
+      <p>
+        <button type="submit">reset</button>
+        <button type="submit">Send</button>
+      </p>
+      <h3>Our Location</h3>
+      <p>We are located at</p>
+      <address>
+        <em
+          >10 Ajagungbade street off Cmd road ikosi ketu, <br />Lagos state.
+          <br />Nigeria.
+        </em>
+      </address>
+      <p><strong>Phone</strong>:080-221-09872</p>
+      <p><a href="#">Back to top</a></p>
+      <hr />
+      <p>&copy;Ayo's Taco Shop</p>
+    </footer>
+  </body>
+</html>
